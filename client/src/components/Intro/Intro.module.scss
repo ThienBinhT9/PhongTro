@@ -1,0 +1,95 @@
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--white);
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 3px rgb(184, 184, 184);
+    padding: 16px;
+    
+    .title{
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 32px;
+    }
+
+    .description{
+        line-height: 1.6;
+        margin-bottom: 32px;
+    }
+
+    .statistic{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 38px;
+        
+        .statistic__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .statistic__item__name{
+                margin-top: 4px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .price{
+        text-align: center;
+        font-size: 19px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .stars{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(223, 223, 24);
+        margin-bottom: 38px;
+    }
+
+    .comment{
+        opacity: 0.7;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 24px;
+    }
+
+    .author{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .question{
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .answer{
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+
+    .btn-create-post{
+        margin: 0 auto;
+        font-size: 18px;
+        background-color: var(--main-color);
+        transition: 0.5s;
+        padding: 9px 15px;
+        border-radius: 7px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #F6C586;
+            text-decoration: underline;
+        }
+    }
+}

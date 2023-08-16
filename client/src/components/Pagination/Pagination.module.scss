@@ -1,0 +1,32 @@
+.wrapper{
+    margin-bottom: 42px;
+    margin-top: 12px;
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        .item{
+            width: 40px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: white;
+            box-shadow: 0 0 2px gray;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .disable{
+            pointer-events: none;
+            cursor: auto;
+        }
+
+        .active{
+            background-color: rgb(247, 151, 25);
+        }
+    }
+}

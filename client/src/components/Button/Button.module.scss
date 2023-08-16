@@ -1,0 +1,33 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 4px;
+    padding:12px;
+    border-radius: 7px;
+}
+
+.primary{
+    background-color: var(--main-color);
+    color: var(--black);
+    transition: 0.5s;
+
+    &:hover{
+        background-color: #F6C586;
+    }
+}
+
+.text{
+    
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+svg{
+    margin-right: 4px;
+}

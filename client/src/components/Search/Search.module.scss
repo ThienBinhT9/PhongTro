@@ -1,0 +1,31 @@
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 32px;
+    height: 50px;
+    background-color: rgb(77, 98, 162);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    margin-bottom: 48px;
+}
+
+.btn-search{
+    border-radius: 0;
+    justify-content: center;
+    background-color: var(--main-color);
+    font-weight: 500;
+    transition: 0.5s;
+    margin-right: 0;
+
+    &:hover{
+        background-color: #F6C586;
+    }
+}
+
+.search__filter__model{
+    width: 45%;
+    height: 70vh;
+}

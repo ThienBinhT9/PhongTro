@@ -1,0 +1,39 @@
+.wrapper{
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgb(154, 154, 154);
+    background-color: var(--white);
+    margin-bottom: 24px;
+    min-height: 100vh;
+}
+
+.arrange{
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    .arrange__text{
+        font-size: 15px;
+        margin-right: 12px;
+    }
+
+    .arrange__btn{
+        padding: 6px 10px;
+        font-size: 15px;
+        border: none;
+        margin-right: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+            background-color: rgb(226, 226, 226);
+            text-decoration: underline;
+        }
+    }
+
+    .active{
+
+    }
+}

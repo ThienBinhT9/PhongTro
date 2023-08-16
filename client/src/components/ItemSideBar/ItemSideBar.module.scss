@@ -1,0 +1,42 @@
+.wrapper{
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgb(154, 154, 154);
+    background-color: var(--white);
+    margin-bottom: 24px;
+}
+
+.title{
+    margin-bottom: 14px;
+}
+
+.content{
+
+    .content__item{
+        padding: 14px 0;
+        border-bottom: 1px solid rgb(238, 238, 238);
+        border-radius:0;
+        transition: 0.5s;
+        margin: 0;
+        display: inline-flex;
+
+        &:hover{
+            padding-left: 6px;
+            color: #fa9d23;
+        }
+    
+        svg{
+            font-size: 12px;
+            margin-right: 8px;
+        }
+    }
+
+    .content__not__double__item{
+        width: 100%;
+    }
+    
+    .content__double__item{
+        width: 50%;
+    }
+}
+

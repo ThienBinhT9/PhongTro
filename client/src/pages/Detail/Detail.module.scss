@@ -1,0 +1,192 @@
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .content{
+        flex: 1;
+        background-color: var(--white);
+        border-radius: 5px;
+        box-shadow: 0 0 2px rgb(162, 162, 162);
+        overflow: hidden;
+
+        .images{
+            width: 100%;
+            height: 370px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            position: relative;
+
+            .image{
+                display: flex;
+                align-items: center;
+                background-color: #16181f;
+                height: 370px;
+
+                img{
+                    object-fit: contain;
+                    // object-position: center;
+                    max-height: 100%;
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 100%;
+                    width: unset;
+                }
+
+            }
+            .images__quantity{
+                position: absolute;
+                bottom: 12px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(0,0,0,0.6);
+                padding: 3px 8px;
+                border-radius: 2px;
+                font-size: 14px;
+                color: white;
+            }
+
+        }
+
+        .others{
+            padding: 24px;
+
+            .title{
+                font-size: 23px;
+                color: rgb(237, 142, 25);
+                margin-bottom: 24px;
+            }
+
+            .label{
+                margin-bottom: 10px;
+
+                a{
+                    color: rgb(237, 142, 25);
+                    text-decoration: underline;
+                }
+            }
+
+            .address{
+                font-weight: 500;
+                font-size: 15px;
+                margin-bottom: 10px;
+
+                svg{
+                    color: rgb(0, 89, 255);
+                    margin-right: 6px;
+                }
+            }
+
+            .attributes{
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+
+                .attributes__item{
+                    background-color: transparent;
+                    flex: unset;
+                    cursor:auto;
+                    padding-left: 0;
+                    margin-right: 20px;
+                }
+
+                .attributes__item--price{
+                    
+                    span,svg{
+                        font-size: 19px;
+                        font-weight: 500;
+                        color: rgb(237, 142, 25);
+                    }
+                }
+            }
+
+            .description{
+                margin-bottom: 12px;
+            }
+
+            .overview{
+                margin-bottom: 12px;
+            }
+
+            .contact{
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .navbar{
+        width: 350px;
+        margin-left: 24px;
+
+        .contact__user{
+            border-radius: 5px;
+            background-color: #FEBB02;
+            padding: 16px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 24px;
+
+            .contact__user__avatar{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .contact__user__btn{
+                background-color: white;
+                border: 1px solid black;
+                width: 100%;
+                margin-left: 0;
+                justify-content: center;
+            
+                 
+                svg{
+                    margin-right: 6px;
+                }
+              
+                &:hover{
+                    background-color: rgb(253, 255, 240);
+                }
+            }
+
+            & > *{
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+
+.section__title{
+    margin-bottom: 18px;
+}
+
+.section__content{
+    
+    p{
+        margin-bottom: 16px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .section__content__item{
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+
+        span{
+            flex: 1;
+        }
+
+        p{
+            flex: 2;
+            margin-bottom: 0;
+        }
+    }
+
+    .section__content__item--active{
+        background-color: #f5f5f5;
+    }
+}
